@@ -1,0 +1,46 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="document">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="patient" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="diagnosis"/>
+              <xs:element type="xs:decimal" name="radius_mean"/>
+              <xs:element type="xs:decimal" name="texture_mean"/>
+              <xs:element type="xs:decimal" name="perimeter_mean"/>
+              <xs:element type="xs:decimal" name="area_mean"/>
+              <xs:element type="xs:decimal" name="smoothness_mean"/>
+              <xs:element type="xs:decimal" name="compactness_mean"/>
+              <xs:element type="xs:decimal" name="concavity_mean"/>
+              <xs:element type="xs:decimal" name="concave_points_mean"/>
+              <xs:element type="xs:decimal" name="symmetry_mean"/>
+              <xs:element type="xs:decimal" name="fractal_dimension_mean"/>
+              <xs:element type="xs:decimal" name="radius_se"/>
+              <xs:element type="xs:decimal" name="texture_se"/>
+              <xs:element type="xs:decimal" name="perimeter_se"/>
+              <xs:element type="xs:decimal" name="area_se"/>
+              <xs:element type="xs:decimal" name="smoothness_se"/>
+              <xs:element type="xs:decimal" name="compactness_se"/>
+              <xs:element type="xs:decimal" name="concavity_se"/>
+              <xs:element type="xs:decimal" name="concave_points_se"/>
+              <xs:element type="xs:decimal" name="symmetry_se"/>
+              <xs:element type="xs:decimal" name="fractal_dimension_se"/>
+              <xs:element type="xs:decimal" name="radius_worst"/>
+              <xs:element type="xs:decimal" name="texture_worst"/>
+              <xs:element type="xs:decimal" name="perimeter_worst"/>
+              <xs:element type="xs:decimal" name="area_worst"/>
+              <xs:element type="xs:decimal" name="smoothness_worst"/>
+              <xs:element type="xs:decimal" name="compactness_worst"/>
+              <xs:element type="xs:decimal" name="concavity_worst"/>
+              <xs:element type="xs:decimal" name="concave_points_worst"/>
+              <xs:element type="xs:decimal" name="symmetry_worst"/>
+              <xs:element type="xs:decimal" name="fractal_dimension_worst"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
